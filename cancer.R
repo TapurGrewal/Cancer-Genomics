@@ -57,5 +57,5 @@ log2Fc
 mat <- cbind(control, tumor, p_value, log2Fc)
 mat
 
-EnhancedVolcano(mat)
+
 
