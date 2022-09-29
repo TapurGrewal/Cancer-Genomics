@@ -3,12 +3,12 @@
 m =read.csv("C:/Users/grewa/Documents/Python/can_gen1.csv",sep=",",header=T,row.names = 1)
 
 #cpm
-cpmatrix = m
+cpm = m
 for(i in 1:ncol(m)){
-  cpmatrix[,i]=(m[,i]/sum(m[,i]))*1000000
+  cpm[,i]=(m[,i]/sum(m[,i]))*1000000
 }
 #log of cpm
-logcpm=log2(cpmatrix+1)
+logcpm=log2(cpm+1)
 summary(logcpm)
 
 # z score
