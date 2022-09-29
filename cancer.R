@@ -28,12 +28,8 @@ saveRDS(l, file = "logc.rds")
 z_scores <- (cpmatrix-mean(cpmatrix))/sd(cpmatrix)
 z_scores
 
-#Calculate variance using log 
-variance = apply(l, 1, var)
-variance = sort(variance,decreasing = T)
-top50 = variance[1:50]
-pmat = z_score[names(top50),]
-Heatmap(pmat)
+#Heatmap
+heatmap(z_scores)
 
 #To identify genes which are differential in tumor vs control samples
 v1 <- cpmatrix[0:10,1:5]
