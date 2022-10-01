@@ -3,8 +3,6 @@ library(matrixStats)
 x=read.csv("C:/Users/grewa/Downloads/GSE208390_gene_count_matrix.csv.gz",sep=",",header=T,row.names = 1)
 x
 
-
-
 function1=function(x){
   matrixc=x
   m <- as.numeric(unlist(matrixc))
@@ -21,7 +19,6 @@ function1=function(x){
   }
   z_score[is.na(z_score)]=0
   zsc = as.matrix(z_score)
-  
   
   Heatmap(zsc)
   return(Heatmap(zsc[1:10],))
