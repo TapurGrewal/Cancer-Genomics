@@ -4,15 +4,15 @@ x=read.csv("C:/Users/grewa/Downloads/GSE208390_gene_count_matrix.csv.gz",sep=","
 x
 
 function1=function(x){
-  matrixc=x
-  m <- as.numeric(unlist(matrixc))
+  matrix =x
+  m <- as.numeric(unlist(matrix))
   for (i in 1:ncol(x)) {
-    matrixc[,i] = (x[,i]/sum(x[,i]))*1000000
-    print(head(matrixc))
-    matrixc[,i]= log2(matrixc[,i] +1)
-    logfc=log2(matrixc+1)
+    matcpm[,i] = (x[,i]/sum(x[,i]))*1000000
+    print(head(matcpm))
+    matcpm[,i]= log2(matcpm[,i] +1)
+    logfc=log2(matcpm+1)
   }
-  data = matrixc
+  data = matcpm
   for (i in 1:ncol(data)){
     z_score = (data - rowMeans(data))/rowSds(as.matrix(data))[row(data)]
     
