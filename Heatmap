@@ -1,0 +1,5 @@
+import os
+file = open('C:/Users/grewa/Desktop/cervical_cancer/data_normalization.ipynb')
+file
+import seaborn as sns
+sns.heatmap(zscr[0:10],xticklabels='auto', yticklabels=id1[0:10],annot=False,cmap='gnuplot')
