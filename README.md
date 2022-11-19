@@ -4,7 +4,9 @@ Gene Expression Analysis: Gene expression analysis provides quantitative informa
 High-throughput technologies to measure global gene expression levels started with Serial Analysis of Gene Expression (SAGE) and are widely used with microarray and RNA-seq
 For gene expression we are taking GEO database and my case study has Cervical cancer type of RNA sequence which I have collected from NCBI GEO database
 
-File Link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE204983
+File Link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi
+
+File: GSE208117_Processed_data_files_HeLa-HLA-
 
 
 Normalization of Data:
