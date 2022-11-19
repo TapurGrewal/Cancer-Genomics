@@ -16,6 +16,9 @@ For example, we use statistical testing to decide whether, for a given gene, an 
 Volcano Plot:
 A volcano plot is a type of scatterplot that shows statistical significance (P value) versus magnitude of change (fold change). It enables quick visual identification of genes with large fold changes that are also statistically significant. These may be the most biologically significant genes. In a volcano plot, the most upregulated genes are towards the right, the most downregulated genes are towards the left, and the most statistically significant genes are towards the top.
 
+Result Interpretation (Volcano Plot):
+As we can see in plot, left-side genes are downregulated genes and right-side gene are upregulated gene in the sample.
+
 
 
 
